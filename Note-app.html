@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Note-app</title>
+    <link rel="stylesheet" href="Note-App.css" />
+</head>
+
+<body>
+    <div>
+        <section id="home">
+            <div class="container">
+                <div class="header upper">NOTE APP</div>
+                <br /><br />
+                <div>
+                    <input id="input-field" class="form-control" placeholder="Something here.." type="text" />
+                </div>
+                <div class="color">
+                    <div class="color-box" style="background-color: white"></div>
+                    <div class="color-box" style="background-color: rgb(255, 128, 0)"></div>
+                    <div class="color-box" style="background-color: yellow"></div>
+                    <div class="color-box" style="background-color: greenyellow"></div>
+                    <div class="color-box" style="background-color: green"></div>
+                    <div class="color-box" style="background-color: rgb(0, 238, 255)"></div>
+                    <div class="color-box" style="background-color: deepskyblue"></div>
+                    <div class="color-box" style="background-color: rgb(0, 85, 255)"></div>
+                    <div class="color-box" style="background-color: rgb(80, 59, 183)"></div>
+                    <div class="color-box" style="background-color: rgb(168, 43, 226)"></div>
+                    <div class="color-box" style="background-color: rgb(248, 70, 207)"></div>
+                </div>
+                <div class="btn-box">
+                    <div id="btn-save" class="add">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-plus" viewBox="0 0 16 16">
+                            <path
+                                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
+                        </svg>
+                    </div>
+                    <div id="btn-delete" class="clean">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-eraser-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M8.086 2.207a2 2 0 0 1 2.828 0l3.879 3.879a2 2 0 0 1 0 2.828l-5.5 5.5A2 2 0 0 1 7.879 15H5.12a2 2 0 0 1-1.414-.586l-2.5-2.5a2 2 0 0 1 0-2.828zm.66 11.34L3.453 8.254 1.914 9.793a1 1 0 0 0 0 1.414l2.5 2.5a1 1 0 0 0 .707.293H7.88a1 1 0 0 0 .707-.293z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="listed" class="list">
+
+        </div>
+    </div>
+    <script src="Note-app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    /* background-color: aqua; */
+    width: 90%;
+  max-width: 800px;
+  margin: 70px auto;
+  text-align: center;
+}
+.container .upper {
+    font-size: 25px;
+}
+.container .form-control {
+    width: 80%;
+  padding: 12px 15px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+.container .form-control:focus {
+  border-color: #03bafc;
+  box-shadow: 0 0 6px rgba(0, 183, 255, 0.4);
+}
+.container .color {
+    /* background-color: blueviolet; */
+    width: 80%;
+    display: flex;
+    gap: 5px;
+    margin: 5px auto 0;       /* این باعث می‌شه خود باکس وسط بیاد */
+}
+.container .color-box {
+    border: 1px solid #919191;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+.container .btn-box {
+  width: 80%;
+  /* background-color: antiquewhite; */
+  display: flex;
+  justify-content: flex-end;
+  gap: 5px;
+  margin: 7px auto 0;
+}
+.container .btn-box .add {
+  border: 1px solid #03bafc;
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #03bafc;
+  border-radius: 4px;
+}
+.container .btn-box .add:hover {
+  background-color: #038ec0;
+  color: white;
+}
+.container .btn-box .add svg {
+  width: 25px;
+  height: 25px;
+}
+.container .btn-box .clean {
+  border: 1px solid rgb(236, 15, 15);
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(236, 15, 15);
+  border-radius: 4px;
+}
+.list {
+  width: 90%;
+  max-width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 70px auto;
+}
+.list .card {
+  border: 1px solid #038ec0;
+  cursor: pointer;
+  padding: 10px 116px;
+  border-radius: 4px;
+}
+.list .card .card-text {
+  font-size: 15px;
+  color: rgb(38, 38, 39);
+}
+
+/* واکنش‌گرایی برای موبایل */
+@media (max-width: 600px) {
+  .container .form-control {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}
