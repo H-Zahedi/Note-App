@@ -6,6 +6,12 @@ const btnDeleteElem = $.querySelector('#btn-delete')
 const colorsBox = $.querySelectorAll('.color-box')
 const notesContainer = $.querySelector('#listed')
 
+notesContainer.addEventListener('click', function(event) {
+    if (event.target.tagName === 'p') {
+        event.target.parentElement.remove()
+    }
+})
+
 colorsBox.forEach(function(colorBox) {
     colorBox.addEventListener('click', function (event) {
         let mainColor = event.target.style.backgroundColor
@@ -19,7 +25,7 @@ function generateNewNote () {
     newNoteDivElem.className = 'card'
     let inputBg = inputElem.style.backgroundColor
     newNoteDivElem.style.backgroundColor = inputBg
-    newNoteDivElem.addEventListener('click', removeNote)
+    // newNoteDivElem.addEventListener('click', removeNote) 
 
     let newNotePElem = $.createElement('p')
     newNotePElem.className = 'card-text'
@@ -33,9 +39,9 @@ function generateNewNote () {
     inputElem.style.backgroundColor = '#fff'
 }
 
-function removeNote(event) {
-    event.target.remove()
-}
+// function removeNote(event) {
+//     event.target.remove()
+// }
 
 btnDeleteElem.addEventListener('click', function () {
     inputElem.value = ''
